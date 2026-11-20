@@ -8,6 +8,7 @@ export default defineConfig({
 		entrypoint,
 		env: {
 			WORLD: bindings.text("World"),
+			DB: bindings.d1({ name: "cf-ci-worker-db" }),
 		},
 	},
 });
